@@ -1,0 +1,15 @@
+/* Факти про електротехніку */
+fact: Resistor(r)
+fact: Capacitor(c)
+fact: Inductor(l)
+fact: Voltage(v)
+fact: Current(i)
+
+/* Правила: Ohm's Law */
+rule: Voltage(v) = Current(i) * Resistor(r)
+
+/* Правило: Збереження енергії в конденсаторі */
+rule: Energy(E) = 0.5 * Capacitor(c) * Voltage(v)^2
+
+/* Правило: Індуктивність */
+rule: Voltage(v) = Inductor(l) * (d(Current(i))/dt)
